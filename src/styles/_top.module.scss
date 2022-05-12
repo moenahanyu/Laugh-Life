@@ -1,0 +1,17 @@
+// 色
+$blue: #43C4C4;
+$gray: #F5F5F5;
+
+.fv {
+    position: relative;
+    z-index: 0;
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: $gray;
+        z-index: -1;
+    }
+}

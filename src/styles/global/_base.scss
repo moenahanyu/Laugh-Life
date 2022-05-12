@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "texta";
+	font-weight: 700;
+	src: url("../fonts/TextaBold.woff") format("woff");
+}
+@font-face {
+	font-family: "noto";
+	font-weight: 400;
+	src: url("../fonts/NotoSansJP-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: "noto";
+	font-weight: 700;
+	src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
+}
+// $font-texta : 'texta', sans-serif;
+
+
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #333333;
+    font-family: 'noto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}

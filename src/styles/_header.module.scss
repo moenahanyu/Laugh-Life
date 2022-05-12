@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: 'texta', sans-serif;
+}
+.logo {
+    width: 200px;
+    color: #333;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.nav-wrap {
+    display: flex;
+    .nav {
+        display: flex;
+        align-items: center;
+        .contact {
+            color: #43C4C4;
+        }
+        a {
+            margin-right: 44px;
+            font-size: 1.4rem;
+        }
+    }
+    .humbtn {
+        width: 140px;
+        height: 100px;
+        background: linear-gradient(70deg, #74EBD5, #9FACE6);
+    }
+}
