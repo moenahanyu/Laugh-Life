@@ -25,10 +25,10 @@ const SimpleSlider = () =>  {
         <Image filename="fv01.jpg" alt="サンプル画像" /> 
         </div>
         <div>
-        <Image filename="fv01.jpg" alt="サンプル画像" /> 
+        <Image filename="fv02.jpg" alt="サンプル画像" /> 
         </div>
         <div>
-        <Image filename="fv01.jpg" alt="サンプル画像" /> 
+        <Image filename="fv03.jpg" alt="サンプル画像" /> 
         </div>     
       </Slider>
     );
