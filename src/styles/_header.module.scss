@@ -25,9 +25,40 @@
             font-size: 1.4rem;
         }
     }
-    .humbtn {
+    .open-menu {
         width: 140px;
         height: 100px;
         background: linear-gradient(70deg, #74EBD5, #9FACE6);
+        position: relative;
+        span {
+            display: inline-block;
+            transition: all .4s;/*アニメーションの設定*/
+            position: absolute;
+            left: 13px;
+            left: 50%;
+            height: 2px;
+            background-color: #fff;
+        }
+        .open:nth-of-type(1) {
+            top: 50%;
+            transform: translate(-50%) rotate(-45deg);
+            width: 33%;
+        }
+        .open:nth-of-type(2) {
+            top: 50%;
+            transform: translate(-50%) rotate(45deg);
+            width: 33%;
+        }
+        .close:nth-of-type(1) {
+            transform: translateX(-50%);
+            top:42px;	
+            width: 30%;
+        }
+        .close:nth-of-type(2) {
+            transform: translateX(-50%);
+            top:53px;
+            width:30%;
+        }
     }
 }
+
