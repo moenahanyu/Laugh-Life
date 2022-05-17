@@ -37,6 +37,7 @@ function ContactForm() {
   };
 
   return (
+    <div className={styles.form}>
     <div className={styles.formContainer}>
         <form
         onSubmit={handleSubmit}
@@ -73,6 +74,16 @@ function ContactForm() {
         </div>
 
         <div className={styles.contactItem}>
+            <label htmlFor="email">お問い合わせ項目</label>
+            <select name="schedule[]" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="1ヶ月以内">商品について</option>
+                <option value="2ヶ月以内">販売店について</option>
+                <option value="3ヶ月以内">ご意見・ご要望</option>
+            </select>
+        </div>
+
+        <div className={styles.contactItem}>
             <label htmlFor="message">お問い合わせ内容</label>
             <textarea
                 id="message"
@@ -85,6 +96,7 @@ function ContactForm() {
 
         <button type="submit">送信</button>
         </form>
+    </div>
     </div>
   );
 }

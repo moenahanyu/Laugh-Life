@@ -41,7 +41,9 @@ const Header = () => {
   
     return(
         <header className={styles.header}>
-        <h1 className={styles.logo}>Laugh Life</h1>
+        <Link to={"/"}>
+            <h1 className={styles.logo}>Laugh Life</h1>
+        </Link>
         <div className={styles.navWrap}>
             <div className={styles.nav}>
             <Link to={"/company/"}>Company</Link>
