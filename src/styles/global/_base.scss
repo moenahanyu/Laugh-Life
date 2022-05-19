@@ -36,26 +36,7 @@ main {
     max-width: 1300px;
     margin: 0 auto;
 }
-.sub-header {
-    padding: 100px 0;
-    position: relative;
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        background: #C3C3C3;
-        width: calc(100vw - 50px);
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        background: #43C4C4;
-        width: 10%;
-    }
-}
+
 .sub-title {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,7 @@ $gray: #F5F5F5;
 .fv {
     position: relative;
     z-index: 0;
+    background: #fff;
     &:after {
         position: absolute;
         content: '';
@@ -13,5 +14,35 @@ $gray: #F5F5F5;
         height: 50%;
         background: $gray;
         z-index: -1;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+.company {
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    :after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 70%;
+        background: $gray;
+        z-index: -1;
+    }
+    .company-image-wrap {
+        margin-left: calc(((100vw - 100%) / 2) * -1);
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px;
+        width: 95%;
+        .company-image {
+            object-fit : cover;
+            height: 600px;
+        }
     }
 }
