@@ -21,13 +21,13 @@ const SimpleSlider = () =>  {
     };
     return (
       <Slider {...settings}>
-        <div>
+        <div className="slider-item">
         <Image filename="fv01.jpg" alt="サンプル画像" /> 
         </div>
-        <div>
+        <div className="slider-item">
         <Image filename="fv02.jpg" alt="サンプル画像" /> 
         </div>
-        <div>
+        <div className="slider-item">
         <Image filename="fv03.jpg" alt="サンプル画像" /> 
         </div>     
       </Slider>

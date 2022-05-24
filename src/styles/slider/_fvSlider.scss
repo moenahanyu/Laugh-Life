@@ -16,9 +16,6 @@ $gray: #F5F5F5;
     }
 }
 
-.gatsby-image-wrapper {
-    height: 100vh;
-}
 
 .slick-dots li.slick-active button:before {
     color: $blue;
@@ -39,4 +36,8 @@ $gray: #F5F5F5;
     display: flex!important;
     align-items: center;
     justify-content: flex-end;
+}
+
+.slider-item {
+    height: 100vh;
 }

@@ -24,6 +24,8 @@ body {
     font-family: 'noto', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
+    letter-spacing: 1.7px;
+    line-height: 2;
 }
 
 main {
@@ -36,7 +38,9 @@ main {
     max-width: 1300px;
     margin: 0 auto;
 }
-
+.gatsby-image-wrapper {
+    height: 100%;
+}
 .sub-title {
     display: flex;
     flex-direction: column;
