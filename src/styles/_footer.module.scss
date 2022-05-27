@@ -36,7 +36,6 @@ $gray: #F5F5F5;
         justify-content: space-between;
         .footer-left {
             .logo {
-                width: 200px;
                 color: #333;
                 font-size: 40px;
                 font-weight: bold;
@@ -86,7 +85,7 @@ $gray: #F5F5F5;
     white-space: nowrap;
     p {
         position: absolute;
-        top: 45%;
+        top: 41%;
         left: 50%;
         transform: translate(-50%);
         color: #fff;

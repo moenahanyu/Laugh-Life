@@ -93,6 +93,7 @@ section {
     .business-item {
         display: flex;
         justify-content:space-between;
+        align-items:center;
         &:nth-child(1) {
             margin-top: 100px;
         }
@@ -104,14 +105,13 @@ section {
         }
         .business-image-wrap {
             width: 50vw;
-            height: 480px;
+            height: 500px;
             img {
                 height: auto;
             }
         }
         .contents-wrap {
             width: 500px;
-            padding: 50px 0;
             .title {
                 font-size: 3rem;
                 font-weight: bottom;
@@ -124,6 +124,78 @@ section {
     }
 }
 
+// 商品
 .product {
     background: #fff;
+    padding: 150px 0;
+    .products-wrap {
+        display: flex;
+        justify-content:space-between;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        .products-item {
+            width: 22%;
+            padding-top: 22%;
+            position: relative;
+            box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            &:nth-child(1)::after {
+                content: 'NEW';
+                position: absolute;
+                color: $blue;
+                font-size: 1.5rem;
+                top: -50px;
+                font-weight: bold;
+                font-family: 'texta', sans-serif;
+            }
+            .product-image-wrap {
+                width: 100%;
+                top:0;right:0;bottom:0;left:0;position:absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .product-image-item {
+                    width: 60%;
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .products-item-none {
+            background: $gray;
+        }
+    }
+}
+
+// ニュース
+.news {
+    padding: 150px 0;
+    .news-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-title-wrap {
+        width: 30%;
+    }
+    .news-wrap {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 70%;
+        .news-item {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #e1e1e1;
+            .news-item-day {
+                width: 10%;
+                margin-right: 50px;
+            }
+            .news-item-detail {
+                width: 80%;
+            }
+        }
+    }
 }
