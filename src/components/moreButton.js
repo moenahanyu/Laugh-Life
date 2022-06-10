@@ -10,19 +10,25 @@ const moreButton = (props) => {
 
     return (
         <>
-        <Link to={props.links} className="more-btn">
-            <p>View More</p>
-            <span className="arrow">
-                <span></span>
-            </span>
-        </Link>
+        <div class="more-btn-wrap">
+            <Link to={props.links} className="more-btn">
+                <p>View More</p>
+                <span className="arrow">
+                    <span></span>
+                </span>
+            </Link>
+        </div>
 
         <style jsx="true">{`
+                .more-btn-wrap {
+                    display: flex;
+                    justify-content: end;
+                }
                 .more-btn {
                     display: flex;                    font-weight: bold;
                     letter-spacing: 2px;
                     font-size: 1.6rem;
-                    justify-content: flex-end;
+                    // justify-content: flex-end;
                     align-items: center;
                 }
                 .arrow {

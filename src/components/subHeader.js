@@ -18,6 +18,7 @@ const subHeader = (props) => {
                 .sub-header {
                     padding: 100px 0;
                     position: relative;
+                    margin-bottom: 100px;
                 }
                 .sub-header:before {
                     content: '';
