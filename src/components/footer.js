@@ -41,7 +41,7 @@ export default () => (
             </dl>
           </div>
         </div>
-        <small className={styles.copy}>Copyright © 株式会社ニジアス All Rights Reserved.</small>
+        <small className={styles.copy}>Copyright © 株式会社ラフライフ All Rights Reserved.</small>
       </div>
     </div>
   </footer>

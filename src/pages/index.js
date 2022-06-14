@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby" //追加
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import FvSlider from "./../slider/fvSlider";
 import * as styles from '../styles/_top.module.scss'
@@ -9,7 +9,8 @@ import MoreButton from '../components/moreButton';
 import Image from "../components/image" 
 
 
-export default () => (
+
+export default ({ data }) => (
   <Layout>
     <SEO title="トップページ" description="これはトップページです。" />
     <div className={styles.fv}>
@@ -23,7 +24,7 @@ export default () => (
           <Image className={styles.companyImage} filename="company.jpg" alt="会社概要" /> 
         </div>
         <div className={styles.companyText}>
-          <p className={styles.message}><span>“</span>生活に笑顔を<span>”</span></p>
+          <p className={styles.message}><span>“</span>テキストテキスト<span>”</span></p>
           <p className={styles.messageDetail}>
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br></br>
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -103,7 +104,13 @@ export default () => (
             <SubTitle enTitle="NEWS" jaTitle="最新情報" />
           </div>
           <div className={styles.newsWrap}>
-            <a className={styles.newsItem}>
+            {data.allMicrocmsNews.edges.map(({ node }) => (
+              <Link to={`/news/${node.newsId}`} key={node.newsId} className={styles.newsItem}>
+                <p className={styles.newsItemDay}>{node.createdAt}</p>
+                <p className={styles.newsItemDetail}>{node.title}</p>
+              </Link>
+            ))}
+            {/* <a className={styles.newsItem}>
               <p className={styles.newsItemDay}>2022.03.24</p>
               <p className={styles.newsItemDetail}>テキストが入ります。テキストが入ります。</p>
             </a>
@@ -114,7 +121,7 @@ export default () => (
             <a className={styles.newsItem}>
               <p className={styles.newsItemDay}>2022.03.24</p>
               <p className={styles.newsItemDetail}>テキストが入ります。テキストが入ります。</p>
-            </a>
+            </a> */}
           </div>
         </div>
         <MoreButton links="/news/"/>
@@ -122,3 +129,18 @@ export default () => (
     </section>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    allMicrocmsNews {
+      edges {
+        node {
+          newsId
+          title
+          body
+          createdAt(formatString: "YYYY.MM.DD")
+        }
+      }
+    }
+  }
+`
