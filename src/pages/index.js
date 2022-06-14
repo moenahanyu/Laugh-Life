@@ -124,7 +124,7 @@ export default ({ data }) => (
             </a> */}
           </div>
         </div>
-        <MoreButton links="/news/"/>
+        {/* <MoreButton links="/news/"/> */}
       </div>
     </section>
   </Layout>

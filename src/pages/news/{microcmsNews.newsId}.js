@@ -3,18 +3,24 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import SubHeader from '../../components/subHeader';
+import SubHeader from '../../components/subHeader'
+import * as styles from '../../styles/_news.module.scss'
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <SEO title={data.microcmsNews.title} description="これは最新情報ページです。" />
+    <SEO title={data.microcmsNews.title} description="これはnews詳細ページです。" />
     <SubHeader enTitle="NEWS" jaTitle="最新情報" />
-    <h1>{data.microcmsNews.title}</h1>
-    <div
-      dangerouslySetInnerHTML={{
-        __html: `${data.microcmsNews.body}`,
-      }}
-    />
+    <div className="container">
+      <div className={styles.newsDetailWrap}>
+        <p className={styles.newsDate}>{data.microcmsNews.createdAt}</p>
+        <h3 className={styles.newsTitle}>{data.microcmsNews.title}</h3>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${data.microcmsNews.body}`,
+          }} className={styles.newsText}
+        />
+      </div>
+    </div>
   </Layout>
 )
 
@@ -26,6 +32,7 @@ export const query = graphql`
       newsId
       title
       body
+      createdAt(formatString: "YYYY.MM.DD")
     }
   }
 `

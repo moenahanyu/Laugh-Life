@@ -189,6 +189,10 @@ section {
             display: flex;
             padding: 20px 0;
             border-bottom: 1px solid #e1e1e1;
+            transition: all 0.3s;
+            &:hover {
+                opacity: 0.5;
+            }
             .news-item-day {
                 width: 10%;
                 margin-right: 50px;
