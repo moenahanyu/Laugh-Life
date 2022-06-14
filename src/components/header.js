@@ -9,6 +9,10 @@ import { jsx } from '@emotion/react'
 
 import * as styles from '../styles/_header.module.scss'
 
+<head>
+  <meta name="robots" content="noindex" />
+</head>
+
 
 // const [openMenu, setOpenMenu] = useState(false);
 // const menuFunction = () => {

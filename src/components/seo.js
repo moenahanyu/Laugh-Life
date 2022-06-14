@@ -32,6 +32,7 @@ const SEO = ({ title, description }) => {
                     property: `og:locale`,
                     content: `ja_JP`,
                 },
+                { name:"robots", content:"noindex,nofollow"}
             ]}
         />
     )
