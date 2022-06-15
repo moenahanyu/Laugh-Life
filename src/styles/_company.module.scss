@@ -1,0 +1,73 @@
+// 色
+$blue: #43C4C4;
+$gray: #F5F5F5;
+
+.company-wrap {
+    margin-bottom: 150px;
+}
+.company-message-wrap {
+    margin-bottom: 100px;
+    .message-title-wrap {
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-start;
+        .message-title {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            p {
+                font-size: 2rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: #43C4C4;
+                right: 10px;
+                left: 61%;
+                border-radius: 100px;
+                margin-left: 20px;
+                margin-top: 3px;
+            }
+        }
+        .message-text {
+            width: 85%;
+            margin-top: 3px;
+            font-size: 1.8rem;
+            color: $blue;
+        }
+    }
+}
+
+.company-data-wrap {
+    .company-data-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .table {
+    width: 100%;
+    th,td {
+    border: 1px solid #C3C3C3;
+    padding: 20px;
+    }
+    th {
+    font-weight: bold;
+    background-color: #e8e8e8; 
+    }
+    }
+    
+}
+
+// @media screen and (max-width: 767px) {
+// .kaisha,
+// .kaisha tr,
+// .kaisha td,
+// .kaisha th {display:block;}
+// .kaisha th {width:auto;}
+// }

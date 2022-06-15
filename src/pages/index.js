@@ -110,18 +110,6 @@ export default ({ data }) => (
                 <p className={styles.newsItemDetail}>{node.title}</p>
               </Link>
             ))}
-            {/* <a className={styles.newsItem}>
-              <p className={styles.newsItemDay}>2022.03.24</p>
-              <p className={styles.newsItemDetail}>テキストが入ります。テキストが入ります。</p>
-            </a>
-            <a className={styles.newsItem}>
-              <p className={styles.newsItemDay}>2022.03.24</p>
-              <p className={styles.newsItemDetail}>テキストが入ります。テキストが入ります。</p>
-            </a>
-            <a className={styles.newsItem}>
-              <p className={styles.newsItemDay}>2022.03.24</p>
-              <p className={styles.newsItemDetail}>テキストが入ります。テキストが入ります。</p>
-            </a> */}
           </div>
         </div>
         {/* <MoreButton links="/news/"/> */}

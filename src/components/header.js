@@ -53,7 +53,7 @@ const Header = () => {
             <Link to={"/company/"}>Company</Link>
             <Link to={"/business/"}>Business</Link>
             <Link to={"/products/"}>Products</Link>
-            <Link to={"/news/"}>News</Link>
+            {/* <Link to={"/news/"}>News</Link> */}
             <Link to={"/contact/"} className={styles.contact}>Contact</Link>
             </div>
             <div className={styles.openMenu} onClick={menuFunction}>
@@ -66,7 +66,7 @@ const Header = () => {
             <Link to={"/company/"} onClick={menuFunction}>Company</Link>
             <Link to={"/business/"} onClick={menuFunction}>Business</Link>
             <Link to={"/products/"} onClick={menuFunction}>Products</Link>
-            <Link to={"/news/"} onClick={menuFunction}>News</Link>
+            {/* <Link to={"/news/"} onClick={menuFunction}>News</Link> */}
             <Link to={"/contact/"} onClick={menuFunction} className={styles.contact}>Contact</Link>
             </div>
             <div className={styles.openMenu} onClick={menuFunction}>

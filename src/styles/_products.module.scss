@@ -1,0 +1,73 @@
+// 色
+$blue: #43C4C4;
+$gray: #F5F5F5;
+.products-wrap {
+    margin-bottom: 150px;
+}
+.product-item {
+    display: flex;
+    justify-content:space-between;
+    .item-title {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        display: flex;
+        align-items:center;
+        &:before {
+            content: '';
+            width: 6px;
+            height: 4rem;
+            background: $blue;
+            display: inline-block;
+            margin-right: 18px;
+        }
+    }
+    .item-text-wrap {
+        width: 50%;
+    }
+    .item-image-wrap {
+        width: 40%;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        .image-item {
+            width: 45%;
+            img {
+                 object-fit: contain;
+            }
+        }
+    }
+    .shop-link {
+        display: inline-block;
+        padding: 10px 50px 10px 40px;
+        background: $blue;
+        color: #fff;
+        margin-top: 70px;
+        position: relative;
+        transition: all 0.3s;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            right: 28px;
+            top: 50%;
+            width: 9px;
+            height: 9px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg) translateY(-50%);
+            transition: all 0.3s;
+        }
+        &:hover {
+            color: $blue;
+            background: #fff;
+            &:after {
+                right: 23px;
+                border-top: 2px solid $blue;
+                border-right: 2px solid $blue;
+            }
+        }
+    }
+}
