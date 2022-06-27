@@ -23,6 +23,7 @@ const moreButton = (props) => {
                 .more-btn-wrap {
                     display: flex;
                     justify-content: end;
+                    margin-right: 20px;
                 }
                 .more-btn {
                     display: flex;                    font-weight: bold;

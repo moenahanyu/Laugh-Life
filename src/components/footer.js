@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Image from "../components/image" //追加
 
 import * as styles from '../styles/_footer.module.scss'
 
@@ -23,21 +24,21 @@ export default () => (
       <div class="container">
         <div className={styles.footerWrap}>
           <div className={styles.footerLeft}>
-            <h1 className={styles.logo}>Laugh Life</h1>
-            <p>株式会社ラフライフ</p>
+            <h1 className={styles.logo}><Image filename="logo.png" alt="株式会社ラフライフ" /></h1>
+            <p>株式会社Laugh Life</p>
           </div>
           <div className={styles.footerRight}>
             <dl>
               <dt>Address</dt>
-              <dd>〒000-0000<br></br>住所が入ります。住所が入ります。住所が入ります。住所が入ります。</dd>
+              <dd>東京都渋谷区道玄坂３丁目１０番１８号パークハビオ渋谷３０５</dd>
             </dl>
             <dl>
               <dt>Tell</dt>
-              <dd>000-0000-0000</dd>
+              <dd>03-6631-1740</dd>
             </dl>
             <dl>
               <dt>Mail</dt>
-              <dd>test@test.com</dd>
+              <dd>support@laughlife.inc</dd>
             </dl>
           </div>
         </div>

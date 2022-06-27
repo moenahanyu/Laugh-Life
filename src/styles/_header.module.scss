@@ -1,3 +1,5 @@
+@import './global/breakpoint';
+
 .header {
     display: flex;
     position: fixed;
@@ -10,16 +12,27 @@
     font-family: 'texta', sans-serif;
     z-index: 100;
     background: #fff;
+    @include mq(sp) {
+        height: 55px;
+    }
 }
 .logo {
-    width: 200px;
+    width: 250px;
     color: #333;
     font-size: 30px;
     margin-left: 50px;
+    @include mq(sp) {
+        width: 160px;
+        font-size: 2rem;
+        margin-left: 30px;
+    }
 }
 .nav-wrap {
     display: flex;
     .nav {
+        @include mq(sp) {
+            display: none;
+        }
         display: flex;
         align-items: center;
         .contact {
@@ -36,6 +49,10 @@
         background: linear-gradient(70deg, #74EBD5, #9FACE6);
         position: relative;
         cursor: pointer;
+        @include mq(sp) {
+            height: 55px;
+            width: 75px;
+        }
         span {
             display: inline-block;
             transition: all .4s;/*アニメーションの設定*/
@@ -58,12 +75,18 @@
         .close:nth-of-type(1) {
             transform: translateX(-50%);
             top:42px;	
-            width: 30%;
+            width: 30%;        
+            @include mq(sp) {
+                top: 22px;
+            }
         }
         .close:nth-of-type(2) {
             transform: translateX(-50%);
             top:53px;
             width:30%;
+            @include mq(sp) {
+                top: 33px;
+            }
         }
     }
 }
@@ -78,6 +101,9 @@
     background-color:#fff;
     padding-top: 10%;
     display: none;
+    @include mq(sp) {
+        top: 55px;
+    }
     .nav {
         display: flex;
         flex-direction: column;
@@ -99,6 +125,9 @@
     height: 100%;
     background-color:#fff;
     padding-top: 10%;
+    @include mq(sp) {
+        top: 55px;
+    }
     .nav {
         display: flex;
         flex-direction: column;

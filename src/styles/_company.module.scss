@@ -1,6 +1,4 @@
-// 色
-$blue: #43C4C4;
-$gray: #F5F5F5;
+@import "./global/color";
 
 .company-wrap {
     margin-bottom: 150px;
@@ -8,38 +6,28 @@ $gray: #F5F5F5;
 .company-message-wrap {
     margin-bottom: 100px;
     .message-title-wrap {
-        display: flex;
-        justify-content:space-between;
-        align-items: flex-start;
-        .message-title {
-            width: 15%;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            p {
-                font-size: 2rem;
-                font-weight: bold;
-                display: flex;
-                align-items: center;
-            }
-            &:after {
-                content: "";
-                display: block;
-                width: 10px;
-                height: 10px;
-                background: #43C4C4;
-                right: 10px;
-                left: 61%;
-                border-radius: 100px;
-                margin-left: 20px;
-                margin-top: 3px;
-            }
-        }
         .message-text {
             width: 85%;
             margin-top: 3px;
             font-size: 1.8rem;
             color: $blue;
+        }
+    }
+}
+
+.sub-sub-title {
+    margin-bottom: 20px;
+    p {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            background: $blue;
+            margin-right: 10px;
         }
     }
 }

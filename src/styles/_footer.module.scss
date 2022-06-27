@@ -1,6 +1,5 @@
-// 色
-$blue: #43C4C4;
-$gray: #F5F5F5;
+@import "./global/color";
+@import "./global/breakpoint";
 
 .contact {
     padding: 100px 0;
@@ -31,30 +30,54 @@ $gray: #F5F5F5;
 .footer {
     background-color: #E2E2E2;
     padding: 100px 0;
-    .footerWrap {
+    @include mq(sp-n){
+        padding: 50px 0;
+    }
+    .footer-wrap {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+        @include mq(sp) {
+            flex-direction: column;
+        }
         .footer-left {
             .logo {
                 color: #333;
-                font-size: 40px;
-                font-weight: bold;
+                width: 300px;
                 margin-bottom: 10px;
                 margin-bottom: 30px;
+                @include mq(sp) {
+                    width: 250px;
+                    margin-bottom: 10px;
+                }
             }
         }
         .footer-right {
             color: #5d5d5d;
+            margin-top: 0px;
+            @include mq(sp) {
+                margin-top: 40px;
+            }
             dl {
                 display: flex;
                 margin-bottom: 30px;
                 line-height: 2;
                 font-size: 1.4rem;
+                @include mq(sp) {
+                    margin-bottom: 10px;
+                    flex-direction: column;
+                }
                 dt {
                     width: 30%;
+                    @include mq(sp) {
+                        width: 100%;
+                    }
                 }
                 dd {
                     width: 70%;
+                    @include mq(sp) {
+                        width: 100%;
+                    }
                 }
             }
         }

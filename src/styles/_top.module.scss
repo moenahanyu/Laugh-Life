@@ -1,6 +1,5 @@
-// 色
-$blue: #43C4C4;
-$gray: #F5F5F5;
+@import './global/color';
+@import './global/breakpoint';
 
 .fv {
     position: relative;
@@ -40,9 +39,15 @@ section {
         overflow: hidden;
         margin-top: 100px;
         width: 95%;
+        @include mq(sp) {
+            height: 450px;
+        }
         .company-image {
             object-fit : cover;
             height: 600px;
+            @include mq(sp) {
+                height: 450px;
+            }
         }
     }
     .company-text {
@@ -52,11 +57,25 @@ section {
         position: relative;
         z-index: 3;
         padding: 80px;
+        @include mq(tab) {
+            margin-left: 13%;
+        }
+        @include mq(sp) {
+            margin-left: 5%;
+            padding: 60px;
+        }
         .message {
             font-weight: bold;
             font-size: 4rem;
             letter-spacing: 4px;
             margin-bottom: 45px;
+            @include mq(tab) {
+                font-size: 3rem;
+            }
+            @include mq(sp) {
+                font-size: 2rem;
+                margin-bottom: 25px;
+            }
             span {
                 color: $blue;
                 &:nth-child(1) {
@@ -70,6 +89,9 @@ section {
         .message-detail {
             line-height: 2;
             margin-bottom: 80px;
+            @include mq(sp) {
+                margin-bottom: 40px;
+            }
         }
         .more-btn {
             justify-content: flex-end;
@@ -89,29 +111,70 @@ section {
         height: 40%;
         background: #FFFFFF;
         z-index: -1;
+        @include mq(tab) {
+            height: 33%;
+        }
+    }
+    .business-wrap {
+        @include mq(sp){
+            margin-left: calc(((100vw - 100%) / 2) * -1);
+            margin-right: calc(((100vw - 100%) / 2) * -1);
+        }
     }
     .business-item {
         display: flex;
         justify-content:space-between;
         align-items:center;
+        @include mq(tab) {
+            margin-bottom: 70px;
+        }
+        @include mq(sp) {
+            flex-direction: column;
+        }
         &:nth-child(1) {
             margin-top: 100px;
         }
         &:nth-child(2n-1) {
             margin-left: calc(((100vw - 100%) / 2) * -1);
+            @include mq(sp) {
+                margin-left: 0;
+                flex-direction: column;
+                width: 100%;
+            }
         }
         &:nth-child(2n) {
             margin-right: calc(((100vw - 100%) / 2) * -1);
+            @include mq(sp) {
+                margin-right: 0;
+                flex-direction: column-reverse;
+                width: 100%;
+            }
         }
         .business-image-wrap {
             width: 50vw;
             height: 500px;
+            @include mq(tab) {
+                height: 400px;
+            }
+            @include mq(sp) {
+                margin-left: calc(((100vw - 100%) / 2) * -1);
+                margin-right: calc(((100vw - 100%) / 2) * -1);
+                width: 100%;
+                margin-bottom: 30px;
+            }
             img {
                 height: auto;
             }
         }
         .contents-wrap {
             width: 500px;
+            @include mq(tab) {
+                padding: 0 70px;
+            }
+            @include mq(sp) {
+                width: 100%;
+                padding: 0 20px;
+            }
             .title {
                 font-size: 3rem;
                 font-weight: bottom;
@@ -119,6 +182,9 @@ section {
             }
             .detail {
                 margin-bottom: 100px;
+                @include mq(tab) {
+                    margin-bottom: 50px;
+                }
             }
         }
     }
@@ -133,6 +199,9 @@ section {
         justify-content:space-between;
         margin-top: 150px;
         margin-bottom: 100px;
+        @include mq(tab) {
+            flex-wrap: wrap;
+        }
         .products-item {
             width: 22%;
             padding-top: 22%;
@@ -142,6 +211,11 @@ section {
             align-items: center;
             justify-content: center;
             border-radius: 20px;
+            @include mq(tab) {
+                width: 30%;
+                padding-top: 30%;
+                margin-bottom: 50px;
+            }
             &:nth-child(1)::after {
                 content: 'NEW';
                 position: absolute;
@@ -158,7 +232,7 @@ section {
                 align-items: center;
                 justify-content: center;
                 .product-image-item {
-                    width: 60%;
+                    width: 55%;
                     img {
                         object-fit: contain;
                     }

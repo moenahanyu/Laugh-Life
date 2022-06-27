@@ -16,7 +16,8 @@ const subHeader = (props) => {
 
             <style jsx="true">{`
                 .sub-header {
-                    padding: 100px 0;
+                    padding-top:100px;
+                    padding-bottom:100px;
                     position: relative;
                     margin-bottom: 100px;
                 }

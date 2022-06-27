@@ -24,10 +24,10 @@ export default ({ data }) => (
           <Image className={styles.companyImage} filename="company.jpg" alt="会社概要" /> 
         </div>
         <div className={styles.companyText}>
-          <p className={styles.message}><span>“</span>テキストテキスト<span>”</span></p>
+          <p className={styles.message}><span>“</span>生活に笑顔を。<span>”</span></p>
           <p className={styles.messageDetail}>
-          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br></br>
-          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          新しい商品にときめき、毎日が少しでも幸せになるように。<br></br>
+          そんな思いからラフライフは誕生しました。思いを込めた商品を、世の中の人たちに届けます。
           </p>
           <MoreButton links="/company/"/>
         </div>
@@ -45,14 +45,14 @@ export default ({ data }) => (
             <div className={styles.contentsWrap}>
               <p className={styles.title}>商品企画</p>
               <p className={styles.detail}>特異性ある商品を生み出す企画力とデザイン力をもとに、一人ひとりのお客様の生涯のパートナーとなる商品を追求しています。</p>
-              <MoreButton links="/business/"/>
+              {/* <MoreButton links="/business/"/> */}
             </div>
           </div>
           <div className={styles.businessItem}>
             <div className={styles.contentsWrap}>
               <p className={styles.title}>EC事業</p>
               <p className={styles.detail}>自社サイトや楽天市場、Yahoo!ショッピングなどの国内主要モールにて事業を展開。より多くのお客様へ、特異性ある商品をお届けするために、日々試行錯誤しながら店舗運営をしています。</p>
-              <MoreButton links="/business/"/>
+              {/* <MoreButton links="/business/"/> */}
             </div>
             <div className={styles.businessImageWrap}>
               <Image className={styles.businessImage} filename="business02.jpg" alt="EC事業" /> 
@@ -65,7 +65,7 @@ export default ({ data }) => (
             <div className={styles.contentsWrap}>
               <p className={styles.title}>メディア戦略・PR</p>
               <p className={styles.detail}>特異性ある商品を生み出す企画力とデザイン力をもとに、一人ひとりのお客様の生涯のパートナーとなる商品を追求しています。</p>
-              <MoreButton links="/business/"/>
+              {/* <MoreButton links="/business/"/> */}
             </div>
           </div>
         </div>

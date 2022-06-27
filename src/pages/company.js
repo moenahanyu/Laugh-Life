@@ -13,31 +13,38 @@ export default () => (
       <div class={styles.companyWrap}>
         <div className={styles.companyMessageWrap}>
           <div className={styles.messageTitleWrap}>
-            <div className={styles.messageTitle}>
+            <div className={styles.subSubTitle}>
               <p>経営理念</p>
             </div>
             <p className={styles.messageText}>
-              テキストが入ります。テキストが入ります。<br></br>テキストが入ります。テキストが入ります。テキストが入ります。
+              生活に笑顔を。新しい商品にときめきを。
             </p>
           </div>
         </div>
         <div className={styles.companyDataWrap}>
+          <div className={styles.subSubTitle}>
+              <p>会社情報</p>
+          </div>
           <table className={styles.table}>
             <tr>
               <th>会社名</th>
-              <td>株式会社ラフライフ</td>
+              <td>株式会社Laugh Life</td>
             </tr>
             <tr>
               <th>所在地</th>
               <td>住所が入ります。住所が入ります。住所が入ります。</td>
             </tr>
             <tr>
-              <th>代表者</th>
-              <td>名前が入ります。</td>
+              <th>運営責任者<br></br>代表取締役</th>
+              <td>長谷川　公希</td>
             </tr>
             <tr>
               <th>電話</th>
-              <td>000-0000-0000</td>
+              <td>03-6631-1740</td>
+            </tr>
+            <tr>
+              <th>メールアドレス</th>
+              <td>support@laughlife.inc</td>
             </tr>
             <tr>
               <th>事業内容</th>

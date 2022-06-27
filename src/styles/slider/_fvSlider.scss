@@ -1,16 +1,21 @@
-// 色
-$blue: #43C4C4;
-$gray: #F5F5F5;
+@import "../global/color";
+@import '../global/breakpoint';
 
 
 .slick-list {
     height: calc(100vh - 200px);
+    @include mq(sp) {
+        height: calc(100vh - 100px);
+    }
 }
 .slick-dots {
     position: initial;
 }
 .slick-slider {
     margin-left: 160px;
+    @include mq(sp) {
+        margin-left: 80px;
+    }
     img {
         object-fit: cover;
     }
@@ -36,6 +41,17 @@ $gray: #F5F5F5;
     display: flex!important;
     align-items: center;
     justify-content: flex-end;
+    @include mq(sp) {
+        height: 50px;
+        padding-right: 50px;
+    }
+}
+
+.slick-dots li {
+    @include mq(sp) {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .slider-item {

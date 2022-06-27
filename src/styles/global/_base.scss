@@ -1,3 +1,5 @@
+@import './breakpoint.scss';
+
 @font-face {
 	font-family: "texta";
 	font-weight: 700;
@@ -37,12 +39,21 @@ a {
 main {
     margin-top: 100px;
     overflow-x: hidden;
+    @include mq(sp) {
+        margin-top: 55px;
+    }
 }
 
 .container {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+    @include mq(tab) {
+        padding: 0 40px;
+    }
+    @include mq(sp-n) {
+        padding: 0 15px;
+    }
 }
 .gatsby-image-wrapper {
     height: 100%;
