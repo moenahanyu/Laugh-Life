@@ -1,12 +1,19 @@
 @import "./global/color";
+@import "./global/breakpoint";
 
 
 .products-wrap {
     margin-bottom: 150px;
+    @include mq(sp-n) {
+        margin-bottom: 100px;
+    }
 }
 .product-item {
     display: flex;
     justify-content:space-between;
+    @include mq(sp) {
+        flex-direction: column-reverse;
+    }
     .item-title {
         font-size: 3rem;
         margin-bottom: 30px;
@@ -23,6 +30,9 @@
     }
     .item-text-wrap {
         width: 50%;
+        @include mq(sp) {
+            width: 100%;
+        }
     }
     .item-image-wrap {
         width: 40%;
@@ -31,8 +41,18 @@
         align-items: center;
         justify-content: center;
         background: #fff;
+        @include mq(sp) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @include mq(sp-n) {
+            height: 300px;
+        }
         .image-item {
-            width: 45%;
+            width: 50%;
+            @include mq(sp) {
+                width: 47%;
+            }
             img {
                  object-fit: contain;
             }
@@ -46,6 +66,10 @@
         margin-top: 70px;
         position: relative;
         transition: all 0.3s;
+        @include mq(sp-n) {
+            width: 100%;
+            margin-top: 40px;
+        }
         &:after {
             content: '';
             position: absolute;

@@ -24,7 +24,7 @@ const Image = (props) => (
 
     /*
       サイズFIXしたい時は上記childImageSharp {...}の中を以下のように変更
-              sizes(maxWidth: 300) {
+              sizes(maxWidth: 3000) {
                 ...GatsbyImageSharpSizes
               }
     */

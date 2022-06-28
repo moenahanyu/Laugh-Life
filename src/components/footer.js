@@ -30,7 +30,7 @@ export default () => (
           <div className={styles.footerRight}>
             <dl>
               <dt>Address</dt>
-              <dd>東京都渋谷区道玄坂３丁目１０番１８号パークハビオ渋谷３０５</dd>
+              <dd>〒150-0002<br></br>東京都渋谷区道玄坂３丁目１０番１８号パークハビオ渋谷３０５</dd>
             </dl>
             <dl>
               <dt>Tell</dt>

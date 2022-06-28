@@ -1,10 +1,17 @@
 @import "./global/color";
+@import "./global/breakpoint";
 
 .company-wrap {
     margin-bottom: 150px;
+    @include mq(sp-n) {
+        margin-bottom: 100px;
+    }
 }
 .company-message-wrap {
     margin-bottom: 100px;
+    @include mq(sp-n) {
+        margin-bottom: 50px;
+    }
     .message-title-wrap {
         .message-text {
             width: 85%;
@@ -43,19 +50,17 @@
     th,td {
     border: 1px solid #C3C3C3;
     padding: 20px;
+    @include mq(sp-n) {
+        padding: 10px;
+    }
     }
     th {
     font-weight: bold;
     background-color: #e8e8e8; 
+    @include mq(sp-n) {
+        width: 30%;
+    }
     }
     }
     
 }
-
-// @media screen and (max-width: 767px) {
-// .kaisha,
-// .kaisha tr,
-// .kaisha td,
-// .kaisha th {display:block;}
-// .kaisha th {width:auto;}
-// }

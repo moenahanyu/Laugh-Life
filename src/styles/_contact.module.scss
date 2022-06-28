@@ -1,4 +1,5 @@
 @import "./global/color";
+@import "./global/breakpoint";
 
 main {
     background: $gray;
@@ -11,6 +12,12 @@ form {
     padding: 100px 100px;
     position: relative;
     z-index: 0;
+    @include mq(sp){
+        padding: 50px;
+    }
+    @include mq(sp-n){
+        padding: 20px;
+    }
     &:after {
         content: '';
         top: 0;
@@ -20,6 +27,9 @@ form {
         height: 100%;
         background:#fff;
         z-index: -1;
+        @include mq(sp){
+            width: 100%;
+        }
     }
     button {
         background: $blue!important;
@@ -34,12 +44,22 @@ form {
         display: block;
         margin: 20px 0;
         display: flex;
+        @include mq(sp) {
+            flex-direction: column;
+        }
         label {
             margin-right: 20px;
             width: 25%;
+            @include mq(sp) {
+                width: 100%;
+                margin-bottom: 5px;
+            }
         }
         input,textarea{
             width: 75%;
+            @include mq(sp) {
+                width: 100%;
+            }
         }
     }
 }

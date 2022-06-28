@@ -47,6 +47,13 @@ const subHeader = (props) => {
                     font-size: 1.5rem;
                     margin-bottom: 8px;
                 }
+                @media screen and (max-width: 460px) {
+                    .sub-header {
+                        padding-top:50px;
+                        padding-bottom:50px;
+                        margin-bottom: 60px;
+                    }
+                }
             `}
             </style>
         </div>

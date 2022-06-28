@@ -16,8 +16,18 @@
     @include mq(sp) {
         margin-left: 80px;
     }
+    @include mq(sp-n) {
+        margin-left: 0px;
+    }
     img {
         object-fit: cover;
+    }
+}
+.slider-item {
+    @include mq(sp-n) {
+        img {
+            object-position: left 67% top 0%!important;
+        }
     }
 }
 
@@ -44,6 +54,10 @@
     @include mq(sp) {
         height: 50px;
         padding-right: 50px;
+    }
+    @include mq(sp-n) {
+        padding-right: 0;
+        justify-content: center;
     }
 }
 
