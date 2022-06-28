@@ -17,6 +17,7 @@ const subTitle = (props) => {
                     display: flex;
                     flex-direction: column;
                     font-size: 2rem;
+                    font-weight: bold;
                 }
                 .sub-title .en {
                     color: #43C4C4;

@@ -196,8 +196,12 @@ section {
             }
             .title {
                 font-size: 3rem;
-                font-weight: bottom;
+                font-weight: bold;
                 margin-bottom: 30px;
+                @include mq(sp) {
+                    font-size: 2rem;
+                    margin-bottom: 15px;
+                }
             }
             .detail {
                 margin-bottom: 100px;
