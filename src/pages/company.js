@@ -44,7 +44,7 @@ export default () => (
             </tr>
             <tr>
               <th>電話</th>
-              <td>03-6631-1740</td>
+              <td>03-6625-4456</td>
             </tr>
             <tr>
               <th>メールアドレス</th>
