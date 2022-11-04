@@ -97,7 +97,7 @@ export default ({ data }) => (
       </div>
     </section>
 
-    <section className={styles.news}>
+    {/* <section className={styles.news}>
       <div className="container">
         <div className={styles.newsContainer}>
           <div className={styles.subTitleWrap}>
@@ -112,9 +112,9 @@ export default ({ data }) => (
             ))}
           </div>
         </div>
-        {/* <MoreButton links="/news/"/> */}
+        <MoreButton links="/news/"/>
       </div>
-    </section>
+    </section> */}
   </Layout>
 )
 

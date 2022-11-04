@@ -34,7 +34,7 @@ export default () => (
             </dl>
             <dl>
               <dt>Tell</dt>
-              <dd>03-6631-1740</dd>
+              <dd>03-6625-4456</dd>
             </dl>
             <dl>
               <dt>Mail</dt>
