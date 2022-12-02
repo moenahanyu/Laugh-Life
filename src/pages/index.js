@@ -12,7 +12,7 @@ import Image from "../components/image"
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="トップページ" description="これはトップページです。" />
+    <SEO title="株式会社Laugh Life" description="" />
     <div className={styles.fv}>
       <FvSlider />
     </div>
