@@ -6,7 +6,7 @@ import SubHeader from '../components/subHeader';
 
 export default () => (
   <Layout>
-    <Seo title="事業内容" description="これは事業内容ページです。" />
+    <Seo title="事業内容" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <SubHeader enTitle="BUSINESS" jaTitle="事業内容" />
     <div>
     </div>

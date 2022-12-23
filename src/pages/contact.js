@@ -8,7 +8,7 @@ import ContactForm from '../components/contactForm';
 
 export default () => (
   <Layout>
-    <Seo title="お問い合わせ" description="これはお問い合わせページです。" />
+    <Seo title="お問い合わせ" description="お問い合わせページです。" />
     <SubHeader enTitle="CONTACT" jaTitle="お問い合わせ" />
     <div>
       <ContactForm />　

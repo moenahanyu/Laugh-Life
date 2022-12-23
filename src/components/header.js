@@ -10,11 +10,6 @@ import Image from "../components/image" //追加
 
 import * as styles from '../styles/_header.module.scss'
 
-<head>
-  <meta name="robots" content="noindex" />
-</head>
-
-
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const menuFunction = () => {

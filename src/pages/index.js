@@ -12,7 +12,7 @@ import Image from "../components/image"
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="株式会社Laugh Life" description="" />
+    <SEO title="株式会社Laugh Life" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <div className={styles.fv}>
       <FvSlider />
     </div>
@@ -44,14 +44,14 @@ export default ({ data }) => (
             </div>
             <div className={styles.contentsWrap}>
               <p className={styles.title}>商品企画</p>
-              <p className={styles.detail}>特異性ある商品を生み出す企画力とデザイン力をもとに、一人ひとりのお客様の生涯のパートナーとなる商品を追求しています。</p>
+              <p className={styles.detail}>お客様の生活に寄り添うことをモットーに、毎日の生活に役立つ、お客様第一の商品を企画、開発しております。</p>
               {/* <MoreButton links="/business/"/> */}
             </div>
           </div>
           <div className={styles.businessItem}>
             <div className={styles.contentsWrap}>
               <p className={styles.title}>EC事業</p>
-              <p className={styles.detail}>自社サイトや楽天市場、Yahoo!ショッピングなどの国内主要モールにて事業を展開。より多くのお客様へ、特異性ある商品をお届けするために、日々試行錯誤しながら店舗運営をしています。</p>
+              <p className={styles.detail}>ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。</p>
               {/* <MoreButton links="/business/"/> */}
             </div>
             <div className={styles.businessImageWrap}>
@@ -64,7 +64,7 @@ export default ({ data }) => (
             </div>
             <div className={styles.contentsWrap}>
               <p className={styles.title}>メディア戦略・PR</p>
-              <p className={styles.detail}>特異性ある商品を生み出す企画力とデザイン力をもとに、一人ひとりのお客様の生涯のパートナーとなる商品を追求しています。</p>
+              <p className={styles.detail}>豊かな発想力と特異性のある商品を生み出す企画力とデザイン力を軸に、様々なマーケティングプランをご提案します。</p>
               {/* <MoreButton links="/business/"/> */}
             </div>
           </div>
