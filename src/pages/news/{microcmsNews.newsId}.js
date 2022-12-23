@@ -8,7 +8,7 @@ import * as styles from '../../styles/_news.module.scss'
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <SEO title={data.microcmsNews.title} description="これはnews詳細ページです。" />
+    <SEO title={data.microcmsNews.title} description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <SubHeader enTitle="NEWS" jaTitle="最新情報" />
     <div className="container">
       <div className={styles.newsDetailWrap}>
