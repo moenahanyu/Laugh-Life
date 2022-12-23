@@ -21,7 +21,7 @@ export default () => (
             ダニの死骸やフンが原因とされています。<br></br>
             そこで、ダニ捕りダディは小さいお子様やペットがいるご家庭でも手軽で簡単にできるダニ対策として誕生しました。
             </p>
-            <a href="/" className={styles.shopLink}>公式オンラインショップ</a>
+            <a href="https://laughlife.inc/lp?u=_ris" target="_blank" className={styles.shopLink}>ご購入はこちら</a>
           </div>
           <div className={styles.itemImageWrap}>
             <div className={styles.imageItem}>
