@@ -76,13 +76,13 @@ export default ({ data }) => (
       <div className="container">
        <SubTitle enTitle="PRODUCTS" jaTitle="商品紹介" />
        <div className={styles.productsWrap}>
-          <a href="" className={styles.productsItem}>
+          <Link to="products" className={styles.productsItem}>
            <div className={styles.productImageWrap}>
             <div className={styles.productImageItem}>
                 <Image className={styles.productImage} filename="product01" alt="商品" />
             </div>
            </div>
-          </a>
+          </Link>
           <div className={`${styles.productsItem} ${styles.productsItemNone}`}>
             <div className={styles.productImageItem}></div>
           </div>
@@ -97,7 +97,7 @@ export default ({ data }) => (
       </div>
     </section>
 
-    {/* <section className={styles.news}>
+    <section className={styles.news}>
       <div className="container">
         <div className={styles.newsContainer}>
           <div className={styles.subTitleWrap}>
@@ -112,9 +112,9 @@ export default ({ data }) => (
             ))}
           </div>
         </div>
-        <MoreButton links="/news/"/>
+        {/* <MoreButton links="/news/"/> */}
       </div>
-    </section> */}
+    </section>
   </Layout>
 )
 
