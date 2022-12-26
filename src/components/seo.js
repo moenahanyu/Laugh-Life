@@ -26,7 +26,7 @@ const SEO = ({ title, description }) => {
                 },
                 {
                     property: `og:site_name`,
-                    content: `Dev Blog`,
+                    content: `株式会社Laugh Life`,
                 },
                 {
                     property: `og:locale`,

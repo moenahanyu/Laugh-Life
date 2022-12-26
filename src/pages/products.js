@@ -8,7 +8,7 @@ import Image from "../components/image"
 
 export default () => (
   <Layout>
-    <Seo title="商品紹介" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
+    <Seo title="株式会社Laugh Life | 商品紹介" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <SubHeader enTitle="PRODUCTS" jaTitle="商品紹介" />
     <div className="container">
       <div className={styles.productsWrap}>

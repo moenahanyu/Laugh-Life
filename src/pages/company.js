@@ -7,7 +7,7 @@ import * as styles from '../styles/_company.module.scss'
 
 export default () => (
   <Layout>
-    <Seo title="会社概要" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
+    <Seo title="株式会社Laugh Life | 会社概要" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <SubHeader enTitle="COMPANY" jaTitle="会社概要" />
     <div className="container">
       <div class={styles.companyWrap}>
