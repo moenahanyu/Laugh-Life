@@ -16,7 +16,7 @@ export default ({ data }) => (
     <div className={styles.fv}>
       <FvSlider />
     </div>
-
+    
     <section className={styles.company}>
       <div class="container">
         <SubTitle enTitle="COMPANY" jaTitle="会社概要" />

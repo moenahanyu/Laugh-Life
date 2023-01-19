@@ -13,6 +13,11 @@ export default function HTML(props) {
         />
         {/* <meta name="robots" content="noindex,nofollow"/> */}
         {props.headComponents}
+        <script
+        dangerouslySetInnerHTML={{
+            __html: `!function(t,e){s=t.createElement(e),s.async=!0,s.src="https://cdn.monkey-ads.com/js/cushion.js",t.getElementsByTagName("head")[0].appendChild(s)}(document,"script")`,
+        }}
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
