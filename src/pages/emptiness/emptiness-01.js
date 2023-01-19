@@ -10,6 +10,7 @@ export default () => (
         <Helmet>
         <title>emptiness page</title>
         <meta name="robots" content="noindex,nofollow"/>
+        <meta name="google-site-verification" content="8P5EWhgEP263lAPbER_2K_NOyE2S9IJLeWzJW-Zux_E" />
         </Helmet>
 
         <script
