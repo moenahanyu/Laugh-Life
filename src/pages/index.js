@@ -7,16 +7,20 @@ import SEO from "../components/seo"
 import SubTitle from '../components/subTitle';
 import MoreButton from '../components/moreButton';
 import Image from "../components/image" 
+import { Helmet } from "react-helmet";
 
 
 
 export default ({ data }) => (
   <Layout>
+    <Helmet>
+    <meta name="google-site-verification" content="8P5EWhgEP263lAPbER_2K_NOyE2S9IJLeWzJW-Zux_E" />
+    </Helmet>
     <SEO title="株式会社Laugh Life" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <div className={styles.fv}>
       <FvSlider />
     </div>
-    
+
     <section className={styles.company}>
       <div class="container">
         <SubTitle enTitle="COMPANY" jaTitle="会社概要" />
