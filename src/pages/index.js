@@ -13,10 +13,10 @@ import { Helmet } from "react-helmet";
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="株式会社Laugh Life" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <Helmet>
     <meta name="google-site-verification" content="8P5EWhgEP263lAPbER_2K_NOyE2S9IJLeWzJW-Zux_E" />
     </Helmet>
-    <SEO title="株式会社Laugh Life" description="ダニ捕りダディを始めとする、様々な暮らしに役立つ商品を自社サイトをメインに販売しております。" />
     <div className={styles.fv}>
       <FvSlider />
     </div>
